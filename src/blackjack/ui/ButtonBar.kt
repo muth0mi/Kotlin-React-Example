@@ -1,9 +1,8 @@
 @file:Suppress("UnsafeCastFromDynamic")
 
-package blackjack
+package blackjack.ui
 
 import kotlinx.html.js.onClickFunction
-import kotlinx.html.onClick
 import react.RBuilder
 import react.dom.button
 import react.dom.div

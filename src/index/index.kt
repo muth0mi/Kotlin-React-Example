@@ -1,6 +1,6 @@
 package index
 
-import blackjack.stateful.app
+import blackjack.domain.app
 import react.dom.render
 import kotlin.browser.document
 

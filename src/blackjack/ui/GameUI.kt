@@ -1,6 +1,6 @@
 @file:Suppress("UnsafeCastFromDynamic")
 
-package blackjack
+package blackjack.ui
 
 import blackjack.data.Game
 import kotlinx.html.style

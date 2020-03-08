@@ -1,10 +1,10 @@
-package blackjack.stateful
+package blackjack.domain
 
-import blackjack.EventHandler
+import blackjack.ui.EventHandler
 import blackjack.data.Card
 import blackjack.data.Game
 import blackjack.data.Hand
-import blackjack.gameUI
+import blackjack.ui.gameUI
 import react.*
 
 interface AppState : RState {

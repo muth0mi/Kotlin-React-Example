@@ -1,10 +1,10 @@
 {
-  "short_name": "React Kotlin App",
+  "short_name": "BlackJack",
   "name": "Create React Kotlin App Sample",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "192x192",
+      "sizes": "32x32",
       "type": "image/png"
     }
   ],

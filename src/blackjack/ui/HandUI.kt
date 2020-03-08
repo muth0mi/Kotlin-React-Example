@@ -1,5 +1,5 @@
 @file:Suppress("UnsafeCastFromDynamic")
-package blackjack
+package blackjack.ui
 
 import blackjack.data.Hand
 import kotlinext.js.js
