@@ -1,23 +1,32 @@
 @file:Suppress("UnsafeCastFromDynamic")
+
 package blackjack
 
-import blackjack.data.Game
-import kotlinx.html.style
+import kotlinx.html.js.onClickFunction
+import kotlinx.html.onClick
 import react.RBuilder
+import react.dom.button
 import react.dom.div
-import react.dom.h1
 
-fun RBuilder.gameUI(game: Game){
+interface EventHandler {
+    fun deal()
+    fun hit()
+    fun stay()
+}
+
+fun RBuilder.buttonBar(eventHandler: EventHandler) {
     div {
-        h1 { +"BlackJack" }
-        div {
-
-            attrs.style = kotlinext.js.js{
-                display = "flex"
-            }
-
-            handUi(game.playerHand)
-            handUi(game.dealerHand)
+        button {
+            +"Deal"
+            attrs { onClickFunction = { eventHandler.deal() } }
+        }
+        button {
+            +"Hit"
+            attrs { onClickFunction = { eventHandler.hit() } }
+        }
+        button {
+            +"Stay"
+            attrs { onClickFunction = { eventHandler.stay() } }
         }
     }
 }
